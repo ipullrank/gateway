@@ -30,10 +30,18 @@ To be in compliance with this document, search engine optimization solutions mus
 
 When exporting data from a crawl, the minimum specification of data points and their order within the exported file is follows.
 
+- PageID (Internal unique identifier from source tool)
 - URL
 - Status Code
 - Content Type
--
+- Title
+- Size (Compressed/Uncompressed)
+- Content Size (Uncompressed)
+- Response Time (millis)
+- Depth
+- Common Page Rank
+- Crawl Time
+- Canonical Url
 
 These files are specific comma separated value text files, but saved with an extension of .CDF and should be exported with a file name of [Data provider]-[Domain Name]-crawl-[date].cdf. An example filename might be "ScreamingFrog-Example_com-crawl-12072016.cdf."
 
@@ -44,8 +52,8 @@ Alternatively, these could be exported as a Excel workbook (.xlsx) with the firs
 #### Link Data File (.LDF)
 When exporting data link data for website or webpage the minimum specification of data points and their order within the exported file is follows.
 
-- URL
--
+- Source URL
+- Dest URL
 
 These files are specific comma separated value text files, but saved with an extension of .LDF.
 
